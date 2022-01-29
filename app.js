@@ -145,7 +145,7 @@ app.get("/states/:stateId/stats/", async (request, response) => {
 });
 
 //Get State Name of The District API
-app.get("districts/:districtId/details/", async (request, response) => {
+app.get("/districts/:districtId/details/", async (request, response) => {
   const { districtId } = request.params;
   const getDistrictDetailsQuery = `
     select state.state_name as stateName
